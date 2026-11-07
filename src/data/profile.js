@@ -44,12 +44,13 @@ export const profile = {
     {
       title: 'BSc Computer Science',
       org: 'Miva Open University',
-      period: '400 Level · Final year',
+      period: 'Expected April/May 2027',
     },
-    {
-      title: 'Computer science certificates',
-      org: 'Coursera',
-      period: 'Completed',
-    },
+  ],
+
+  certificates: [
+    { title: 'Programming with JavaScript', org: 'Meta · Coursera', period: 'June 2026', link: 'https://coursera.org/verify/H9NNK4P665U9' },
+    { title: 'Version Control', org: 'Meta · Coursera', period: 'June 2026', link: 'https://coursera.org/verify/FTZYVIYTKZ24' },
+    { title: 'React Basics', org: 'Meta · Coursera', period: 'June 2026', link: 'https://coursera.org/verify/R2WOEAS53HPM' },
   ],
 }
