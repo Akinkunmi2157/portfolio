@@ -6,7 +6,12 @@ function Row({ item }) {
       <div className="row__head">
         <div>
           <h3 className="row__title">{item.title}</h3>
-          <p className="row__org">{item.org}</p>
+          <p className="row__org">
+            {item.org}
+            {item.link && (
+              <> · <a href={item.link} target="_blank" rel="noreferrer">Verify ↗</a></>
+            )}
+          </p>
         </div>
         <span className="row__period">{item.period}</span>
       </div>
@@ -32,6 +37,8 @@ export default function Experience() {
           <ul className="rows">{profile.experience.map((e) => <Row key={e.title} item={e} />)}</ul>
           <h3 className="label label--spaced">Education</h3>
           <ul className="rows">{profile.education.map((e) => <Row key={e.title} item={e} />)}</ul>
+          <h3 className="label label--spaced">Certificates</h3>
+          <ul className="rows">{profile.certificates.map((e) => <Row key={e.title} item={e} />)}</ul>
         </div>
       </div>
     </section>
